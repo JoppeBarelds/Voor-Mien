@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wil je mijn Valentijn zijn?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #001f4d; /* donkerblauw */
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #4fc3f7; /* lichtblauw */
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    #valentineMessage {
+      display: none;
+      max-width: 600px;
+      margin-top: 20px;
+      background: rgba(0, 0, 50, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #4fc3f7;
+      color: #001f4d;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      transform: scale(1.1);
+      background-color: #82ccff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wil je mijn Valentijn zijn? 💙</h1>
+  <button onclick="showMessage()">Klik hier om het te zien!</button>
+
+  <div id="valentineMessage">
+    <img src="8a74a356-d8a3-4ae0-8feb-c0a1babfeea8.png" alt="Ons foto">
+    <p>
+      Jooo driller,<br><br>
+      Nog maar een paar weken, je bent er bijna. Ik weet dat het aftellen nu echt begonnen is en dat je niet kunt wachten om weer naar huis te gaan en eerlijk, ik ook niet, want dat betekent eindelijk weer een baco en stadje samen.<br><br>
+      Je hebt daar in Oeganda iets gedaan wat niet iedereen durft: je bent uit je comfortzone gestapt, hebt nieuwe dingen geleerd en jezelf echt uitgedaagd. Dat is iets om trots op te zijn. Ik ben echt trots op je.<br><br>
+      Hou nog even vol, geniet van de laatste momenten daar, en onthoud: zodra je terug bent, halen we alle Baco in die je gemist hebt.<br><br>
+      Ohja en je wordt tering hard ingemaakt op FIFA als je terug bent 😎
+    </p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('valentineMessage').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
